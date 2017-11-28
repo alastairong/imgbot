@@ -1,3 +1,19 @@
+def create_log(csv_file, col_list):
+    """
+    Load or create .csv into a dataframe
+    :param csv_file: filename to load or create
+    :param col_list: column list if creating new csv file. 'Post_ID' must be a column
+    """
+    if os.path.isfile(csv_file):
+        # if there is a log, load it as a pandas dataframe
+        new_log = pd.read_csv(csv_file)
+    else:
+        new_log = pd.DataFrame(columns=col_list)
+        new_log.set_index('Post_ID', inplace=True)
+
+    return new_log
+
+
 # Download helper that checks if file already exists
 def download(url, filename, destination):
     """

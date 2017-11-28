@@ -14,11 +14,22 @@ import re
 # Import CNN
 #from neuralnetwork import food_CNN
 
-# Import config settings
-import config
-
 # Import helper functions
-import helpers
+from helpers import create_log, download, submission_is_image, save_reply, send_reply
+
+# Set download destinations
+pic_dest = "C:/project/imgbot/pics/"
+thumbnail_dest = "C:/project/imgbot/thumbnails/"
+
+# Create csv file to save data
+csv_file = 'replies.csv'
+col_list = ['Post_ID', 'Post_title', 'Post_URL', 'Subreddit', 'Post_Date', 'Post_Score', 'Bot_Reply', 'Reply_Date', 'Classification', 'Calories', 'Reply_Score']
+reply_log = create_log(csv_file, col_list)
+
+# Set up reddit instance and subreddits
+reddit = praw.Reddit('bot1')
+subreddit_list = 'food+HealthyFood' # not in use
+subreddit = reddit.subreddit('pythonforengineers')
 
 ########################################################################################
 ### Subreddit loop and reply function
