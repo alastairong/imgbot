@@ -12,7 +12,7 @@ import pdb
 import re
 
 # Import CNN
-#from neuralnetwork import food_CNN
+# TBD once CNN trained
 
 # Import helper functions
 from helpers import create_log, download, submission_is_image, save_reply, send_reply
