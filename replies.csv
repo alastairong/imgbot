@@ -1,3 +1,3 @@
-Post_ID,Post_title,Post_URL,Subreddit,Post_Date,Post_Score,Bot_Reply,Reply_Date,Classification,Calories,Reply_Score
-7fhzwm,testing,https://www.reddit.com/r/pythonforengineers/comments/7fhzwm/testing/,t5_3420a,1511643983.0,1,dqdj35n,,,,1
-7fqlen,picture test,https://i.redd.it/d6e9kwp8ie001.jpg,t5_3420a,1511737527.0,1,dqdojjl,,,,1
+Post_title,Post_URL,Subreddit,Post_Date,Post_Score,Bot_Reply,Reply_Date,Classification,Calories,Reply_Score
+testing,https://www.reddit.com/r/pythonforengineers/comments/7fhzwm/testing/,t5_3420a,1511643983.0,1,dqdj35n,,,,50
+picture test,https://i.redd.it/d6e9kwp8ie001.jpg,t5_3420a,1511737527.0,1,dqdojjl,,,,50
